@@ -42,13 +42,10 @@ To make this automatic, that happens for example at 09:00, 14:00 - 15:00 (launch
 
 There are a lot of guides on how to do it, [we could use this one](https://www.geekbitzone.com/posts/macos/crontab/macos-schedule-tasks-with-crontab/)
 
-Once we have crontab working, paste the following lines to make it work
+Once we have crontab working, change the `{PATH-TO-HRLOG-AUTO}` in `crontab.txt` and execute
 
 ```sh
-05 9 * * 1-5 cd {PATH-TO-HRLOG-AUTO}/hrlog-auto && npm run test
-00 14 * * 1-5 cd {PATH-TO-HRLOG-AUTO}/hrlog-auto && npm run test
-00 15 * * 1-5 cd {PATH-TO-HRLOG-AUTO}/hrlog-auto && npm run test
-05 18 * * 1-5 cd {PATH-TO-HRLOG-AUTO}/hrlog-auto && npm run test
+crontab ./crontab.txt
 ```
 
 To change the interval, please check [CrontabGuru](https://crontab.guru/)
