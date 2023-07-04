@@ -2,14 +2,11 @@
   "name": "hrlog-auto",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "npx playwright test"
-  },
+  "main": "main.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "1.35.1"
+    "playwright": "1.35.1"
   }
 }
