@@ -12,13 +12,13 @@ This tool allows you to automatically check-in and check-out on HRLog
 First of all, we will need to clone the repo
 
 ```sh
-  git clone https://github.com/rmyz/hrlog-auto.git
+git clone https://github.com/rmyz/hrlog-auto.git
 ```
 
 Then, install all the deps needed
 
 ```sh
-  npm i
+npm i
 ```
 
 Once you have everything installed, change the credentials under `credentials.json`
@@ -33,7 +33,7 @@ Once you have everything installed, change the credentials under `credentials.js
 Finally, run the script to check-in/check-out
 
 ```sh
-  npm run test
+npm run test
 ```
 
 ## Future improvements
