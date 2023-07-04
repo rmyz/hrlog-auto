@@ -8,9 +8,9 @@ This tool allows you to automatically check-in and check-out on HRLog (MAC only 
 
 2. Create a scripts folder under `~/.scripts`
 
-3. Place the script there
+3. Place the `hrlog-auto-...` script under `~/.scripts`
 
-4. The script accepts 3 params in the following order: email, password, showWindow (debug purposes only)
+4. The script accepts 3 params in the following order: email, password, showWindow (this last is for debug purposes only)
 
 5. Modify the `crontab.txt` call to the script to include your credentials by replacing "YOUR_EMAIL" and "YOUR_PASSWORD"
 
