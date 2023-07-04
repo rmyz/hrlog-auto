@@ -1,4 +1,4 @@
-05 9 * * 1-5 cd {PATH-TO-HRLOG-AUTO}/hrlog-auto && ./hrlog-auto-macos YOUR_EMAIL YOUR_PASSWORD 
-00 14 * * 1-5 cd {PATH-TO-HRLOG-AUTO}/hrlog-auto && ./hrlog-auto-macos YOUR_EMAIL YOUR_PASSWORD
-00 15 * * 1-5 cd {PATH-TO-HRLOG-AUTO}/hrlog-auto && ./hrlog-auto-macos YOUR_EMAIL YOUR_PASSWORD
-05 18 * * 1-5 cd {PATH-TO-HRLOG-AUTO}/hrlog-auto && ./hrlog-auto-macos YOUR_EMAIL YOUR_PASSWORD
+05 9 * * 1-5 ~/.scripts/hrlog-auto-macos YOUR_EMAIL YOUR_PASSWORD 
+00 14 * * 1-5 ~/.scripts/hrlog-auto-macos YOUR_EMAIL YOUR_PASSWORD
+00 15 * * 1-5 ~/.scripts/hrlog-auto-macos YOUR_EMAIL YOUR_PASSWORD
+05 18 * * 1-5 ~/.scripts/hrlog-auto-macos YOUR_EMAIL YOUR_PASSWORD
