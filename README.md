@@ -21,7 +21,7 @@ Then, install all the deps needed
 npm i
 ```
 
-Once you have everything installed, change the credentials under `credentials.json`
+Once you have everything installed, rename `credentials.example.json` to `credentials.json` and change the credentials you use to log in
 
 ```json
 {
