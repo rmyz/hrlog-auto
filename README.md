@@ -14,7 +14,7 @@ This tool allows you to automatically check-in and check-out on HRLog (MAC only 
 
 5. Modify the `crontab.txt` call to the script to include your credentials by replacing "YOUR_EMAIL" and "YOUR_PASSWORD"
 
-6. [Set up crontab](https://www.geekbitzone.com/posts/macos/crontab/macos-schedule-tasks-with-crontab/) and execute the following command (this doesn't need to be under the `~/.scripts` folder)
+6. [Give crontab Full Disk Access](https://www.geekbitzone.com/posts/macos/crontab/macos-schedule-tasks-with-crontab/#giving-cron-full-disk-access) and execute the following command (this doesn't need to be under the `~/.scripts` folder)
 
 ```sh
 crontab ./crontab.txt
