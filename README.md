@@ -1,6 +1,6 @@
 # HRLog-Auto
 
-This tool allows you to automatically check-in and check-out on HRLog
+This tool allows you to automatically check-in and check-out on HRLog (MAC only for now, maybe linux work, didn't tested)
 
 ## Prerequisites
 
