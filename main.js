@@ -26,4 +26,3 @@ const { chromium } = require('playwright');
   await context.close();
   await browser.close();
 })()
-console.log(process.argv.slice(2))
