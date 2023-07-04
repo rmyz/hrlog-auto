@@ -36,10 +36,25 @@ Finally, run the script to check-in/check-out
 npm run test
 ```
 
+## Setting up crontab
+
+To make this automatic, that happens for example at 09:00, 14:00 - 15:00 (launch pause), 18:00... We need to setup `crontab`
+
+There are a lot of guides on how to do it, [we could use this one](https://www.geekbitzone.com/posts/macos/crontab/macos-schedule-tasks-with-crontab/)
+
+Once we have crontab working, paste the following lines to make it work
+
+```sh
+05 9 * * 1-5 cd {PATH-TO-HRLOG-AUTO}/hrlog-auto && npm run test
+00 14 * * 1-5 cd {PATH-TO-HRLOG-AUTO}/hrlog-auto && npm run test
+00 15 * * 1-5 cd {PATH-TO-HRLOG-AUTO}/hrlog-auto && npm run test
+05 18 * * 1-5 cd {PATH-TO-HRLOG-AUTO}/hrlog-auto && npm run test
+```
+
+To change the interval, please check [CrontabGuru](https://crontab.guru/)
+
 ## Future improvements
 
-- Cronjob
+- Script to auto-setup everything
 
 - Packaged app
-
-- Script to autosetup
