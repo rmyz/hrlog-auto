@@ -26,7 +26,7 @@ To see if this worked you should run
 crontab -l
 ```
 
-To change the interval, by default 9:05 start, 14:00 to 15:00 launch pause, 18:05 finish, please check [CrontabGuru](https://crontab.guru/), then modify `crontab.txt` and run again
+To change the interval, by default 9:05 start, 18:05 finish, please check [CrontabGuru](https://crontab.guru/), then modify `crontab.txt` and run again
 
 ```sh
 crontab ./crontab.txt
