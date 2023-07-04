@@ -4,7 +4,7 @@ This tool allows you to automatically check-in and check-out on HRLog (MAC only 
 
 ## Usage
 
-1. Download the exec according to your platform and `crontab.txt` on [this link](https://github.com/rmyz/hrlog-auto/releases)
+1. Download the exec according to your platform(ex. hrlog-auto-macos) and `crontab.txt` on [this link](https://github.com/rmyz/hrlog-auto/releases)
 
 2. Create a scripts folder under `~/.scripts`
 
