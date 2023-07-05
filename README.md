@@ -10,7 +10,7 @@ This tool allows you to automatically check-in and check-out on HRLog (MAC only 
 
 3. Place the `hrlog-auto-...` script under `~/.scripts`
 
-4. The script accepts 3 params in the following order: email, password, showWindow (this last is for debug purposes only)
+The script accepts 3 params in the following order: email, password, showWindow (this last is for debug purposes only)
 
 5. Modify the `crontab.txt` call to the script to include your credentials by replacing "YOUR_EMAIL" and "YOUR_PASSWORD"
 
@@ -25,6 +25,8 @@ To see if this worked you should run
 ```sh
 crontab -l
 ```
+
+## Configuration
 
 To change the interval, by default 9:05 start, 18:05 finish, please check [CrontabGuru](https://crontab.guru/), then modify `crontab.txt` and run again
 
