@@ -17,10 +17,10 @@ const { chromium } = require('playwright');
   await page.getByPlaceholder('Introduce tu contraseña').fill(password);
   await page.getByRole('button', { name: 'Iniciar sesión' }).click();
 
-  await page.waitForTimeout(2000);
-  
+  await page.waitForURL('**/secure/dashboard');
+
   await page.locator('#div-fichaje-action').click();
-  await page.waitForTimeout(3500);
+  await page.waitForResponse((response) => response.url().includes("/secure/ajax-ultimo-fichaje"));
 
   // Teardown
   await context.close();
