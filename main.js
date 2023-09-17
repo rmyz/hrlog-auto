@@ -1,12 +1,11 @@
 const { chromium } = require('playwright');
 
 (async () => {
-  const [email, password, showWindow] = process.argv.slice(2)
+  const [email, password, type, showWindow] = process.argv.slice(2)
   // Setup
   const browser = await chromium.launch(showWindow ? {headless: false} : {headless: true});
   const context = await browser.newContext({permissions:  ['geolocation']});
   const page = await context.newPage();
-
   // The actual interesting bit
   await page.goto('https://app.hrlog.es/admin/login');
   
@@ -19,7 +18,8 @@ const { chromium } = require('playwright');
 
   await page.waitForURL('**/secure/dashboard');
 
-  await page.locator('#div-fichaje-action').click();
+  const textToSearch = type === 'check-in' ? 'Entrada trabajo' : 'Salida trabajo';
+  await page.getByText(textToSearch).click();
   await page.waitForResponse((response) => response.url().includes("/secure/ajax-ultimo-fichaje"));
 
   // Teardown

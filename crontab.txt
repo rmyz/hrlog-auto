@@ -1,2 +1,2 @@
-05 9 * * 1-5 ~/.scripts/hrlog-auto-macos YOUR_EMAIL YOUR_PASSWORD
-05 17 * * 1-5 ~/.scripts/hrlog-auto-macos YOUR_EMAIL YOUR_PASSWORD
+05 9 * * 1-5 ~/.scripts/hrlog-auto-macos YOUR_EMAIL YOUR_PASSWORD check-in
+05 17 * * 1-5 ~/.scripts/hrlog-auto-macos YOUR_EMAIL YOUR_PASSWORD check-out
